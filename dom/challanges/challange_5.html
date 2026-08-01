@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+    font-family: Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.carousel{
+    text-align:center;
+}
+
+img{
+    width:500px;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.buttons{
+    margin:20px;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    cursor:pointer;
+}
+
+#dots{
+    margin-top:20px;
+}
+
+.dot{
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    background:gray;
+    display:inline-block;
+    margin:5px;
+    cursor:pointer;
+}
+
+.active{
+    background:blue;
+}
+    </style>
+</head>
+<body>
+
+<div class="carousel">
+
+    <img id="image" src="" alt="Image">
+
+    <h3 id="caption"></h3>
+
+    <div class="buttons">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+
+    <button id="auto-btn">Start Auto Play</button>
+
+    <p>Next image in <span id="timer">3</span> sec</p>
+
+    <div id="dots"></div>
+
+</div>
+
+<script src="challange_5.js"></script>
+
+</body>
+</html>

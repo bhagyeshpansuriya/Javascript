@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .completed{
+    text-decoration: line-through;
+    color: gray;
+}
+
+li{
+    margin:10px 0;
+}   
+    </style>
+</head>
+<body>
+    <h1>Todo App</h1>
+
+<input
+    type="text"
+    id="task-input"
+    placeholder="Enter a task..."
+>
+
+<button id="add-btn">Add</button>
+
+<p id="empty-msg">No tasks yet. Add one above!</p>
+
+<ul id="task-list"></ul>
+
+<p>Total Tasks: <span id="total">0</span></p>
+<p>Completed: <span id="completed">0</span></p>
+
+<script src="challange_4.js"></script>
+</body>
+</html>
