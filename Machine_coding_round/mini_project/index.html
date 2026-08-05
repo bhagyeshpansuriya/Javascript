@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #85b7e2, #566491);
+    font-family: Arial, sans-serif;
+}
+
+
+.clock-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px 50px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#time {
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+
+#date {
+    font-size: 1.3rem;
+    color: #f1f1f1;
+}
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <h1 id="time">00:00:00</h1>
+        <p id="date">Loading Date</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
