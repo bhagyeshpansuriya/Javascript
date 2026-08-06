@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval</title>
+</head>
+<body>
+
+    <h1>JavaScript Timers</h1>
+
+    <h2>setTimeout Example</h2>
+    <button onclick="startTimeout()">Start setTimeout</button>
+    <button onclick="stopTimeout()">Stop setTimeout</button>
+
+    <hr>
+
+    <h2>setInterval Example</h2>
+    <button onclick="startInterval()">Start setInterval</button>
+    <button onclick="stopInterval()">Stop setInterval</button>
+
+    <script>
+        let timerId;
+        let intervalId;
+
+        function startTimeout() {
+            timerId = setTimeout(() => {
+                alert("I am inside setTimeout");
+            }, 2000);
+        }
+
+        function stopTimeout() {
+            clearTimeout(timerId);
+            alert("setTimeout stopped");
+        }
+
+        function startInterval() {
+            intervalId = setInterval(() => {
+                alert("I am inside setInterval");
+            }, 3000);
+        }
+
+        function stopInterval() {
+            clearInterval(intervalId);
+            alert("setInterval stopped");
+        }
+    </script>
+
+</body>
+</html>

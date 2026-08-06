@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+
+    <h2>Home</h2>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+        
+        function greet(name, callback) {
+            document.write("<h3>Hello " + name + "</h3>");
+            callback();
+        }
+
+       
+        function sayGoodbye() {
+            document.write("<h3>Goodbye!</h3>");
+        }
+
+       
+        greet("Bhagyesh", sayGoodbye);
+
+        
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("Button clicked! This is a callback function.");
+        });
+    </script>
+
+</body>
+</html>
